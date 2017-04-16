@@ -11,28 +11,28 @@ Rails 5.0.1
 
 
 ### Message
-
+```
   belongs_to :user
   belongs_to :group
-
+```
 
 ### User
-
+```
   has_many :messages
   has_many :groups, through: :users_groups
-
+```
 
 ### Group
-
+```
   has_many :messages
   has_many :users, through: :users_groups
-
+```
 
 ### UserGroup
-
+```
   belongs_to :user
   belongs_to :group
-
+```
 ---
 
 ## DATABASE
