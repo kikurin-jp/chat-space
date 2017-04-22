@@ -1,0 +1,38 @@
+.Chat
+  .Chat__side.clearfix
+    .Chat__side--user
+      %p Kikuchi
+      .Chat__side--buttons
+        = link_to root_path, class: "Chat__side--button" do
+          %i.fa.fa-pencil-square-o
+        = link_to root_path, class: "Chat__side--button" do
+          %i.fa.fa-cog
+    %ul.Chat__side--groups
+      = link_to root_path, class: "Chat__side--group--link" do
+        %li.Chat__side--group
+          %p.Chat__side--group--name TECH::CAMP
+          %p.Chat__side--group--text
+
+  .Chat__main
+    .Chat__main--head.clearfix
+      .Chat__main--head--left
+        %h1 TECH::CAMP
+        %p Members:
+      .Chat__main--head--right
+        = link_to 'Edit', root_path, class: "Chat__main--head--right--edit--btn"
+
+    .Chat__main--content
+      %ul.Chat__main--docs
+        %li.Chat__main--doc
+          .Chat__main--doc--head.clearfix
+            %p.Chat__main--doc--head--username Kikurin
+            %p.Chat__main--doc--head--time 2017/04/01 17:30
+          .Chat__main--doc--body
+            %p.Chat__main--doc--body--text hello
+
+    .Chat__main--foot
+      %label.Chat__main--foot--body
+        %input{type: "text", placeholder: "Type a message", class: "Chat__main--foot--textform"}
+        .Chat__main--foot--font
+          %i.fa.fa-image
+      %input{type: "submit", class: "Chat__main--foot--submit"}

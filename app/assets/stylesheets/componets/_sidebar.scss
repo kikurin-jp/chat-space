@@ -1,0 +1,69 @@
+  @charset 'utf-8';
+
+.Chat__side {
+  width: 300px;
+  height: 100%;
+  float: left;
+  background-color: $color-side-bg;
+
+  &--user {
+    height: 61px;
+    background: $color-sidetop-bg;
+    color: $color-white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+
+    p {
+      font-weight: bold;
+      float: left;
+      font-size: 16px;
+      line-height: 50px;
+      letter-spacing: 2px;
+    }
+  }
+
+  &--buttons {
+    float: right;
+  }
+
+    &--button {
+      color: $color-white;
+      margin: 11px 4px;
+      line-height: 28px;
+      display: inline-block;
+    }
+
+  &--groups {
+  }
+
+  &--group {
+    &--link {
+      display: block;
+      padding: 20px;
+      color: $color-white;
+      text-decoration: none;
+
+      &:hover {
+        background: #384a62;
+        transition: background .3s;
+      }
+    }
+
+    &--name {
+      display: inline-block;
+      font-size: 15px;
+      margin-bottom: 5px;
+    }
+
+    &--text {
+      font-size: 11px;
+    }
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
