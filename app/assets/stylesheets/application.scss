@@ -1,0 +1,20 @@
+@charset 'utf-8';
+
+//Gem
+
+@import 'font-awesome';
+
+//Base
+
+@import './base/reset';
+@import './base/variables';
+
+//Components
+
+//wrapper
+@import './components/wrapping';
+//sidebar
+@import './components/sideBar';
+//main
+@import './components/content';
+
