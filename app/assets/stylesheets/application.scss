@@ -1,15 +1,15 @@
 @charset 'utf-8';
 
-//Gem
+//gem
 
 @import 'font-awesome';
 
-//Base
+//base
 
 @import './base/reset';
 @import './base/variables';
 
-//Components
+//components
 
 //wrapper
 @import './components/wrapping';
@@ -18,3 +18,7 @@
 //main
 @import './components/content';
 
+//parts
+
+//devise_views
+@import './parts/user';
